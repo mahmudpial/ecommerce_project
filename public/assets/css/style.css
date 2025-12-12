@@ -24,3 +24,26 @@ body {
     bottom: 1rem;
     z-index: 1055;
 }
+
+
+  /* < !-- Hover Effect --> */
+ .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-outline-info {
+      border: 1px solid #17a2b8;
+      color: #17a2b8;
+      transition: all 0.3s ease;
+  }
+
+  .btn-outline-info:hover {
+      background-color: #17a2b8;
+      color: #fff;
+      border-color: #17a2b8;
+  }
