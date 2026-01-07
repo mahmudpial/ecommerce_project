@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title','Simple Shop')</title>
+    <title>@yield('title', 'Simple Shop')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Product Hover Effect -->
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-    @yield('styles')
+    @yield('style')
 </head>
 
 <body>
@@ -18,7 +18,6 @@
 
 
     <main>
-
         @yield('content')
     </main>
 
@@ -32,7 +31,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
-    @yield('scripts')
+
+    <!-- for flash massage auto close -->
+    <script>
+        const alert = bootstrap.Alert.getOrCreateInstance('.alert')
+        setTimeout(() => {
+            alert.close();
+        }, 3000);
+    </script>
+
+    <!--  Page Specific Scripts -->
+    @yield('script')
 </body>
 
 </html>

@@ -47,3 +47,20 @@ body {
       color: #fff;
       border-color: #17a2b8;
   }
+
+
+
+  /* login style  */
+  .login-box .form-control {
+      border-radius: 30px;
+      padding: 10px 18px;
+  }
+
+  .login-box .form-control:focus {
+      box-shadow: none;
+      border-color: #000;
+  }
+
+  .login-box button:hover {
+      opacity: 0.9;
+  }

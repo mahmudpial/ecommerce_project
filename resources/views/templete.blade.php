@@ -1,13 +1,13 @@
-  @extends('frontend.layout.app')
-  @section('title','SimpleShop-HomePage')
+@extends('frontend.layout.app')
+@section('title', 'SimpleShop-HomePage')
 
 
 
 
 
-  @section('content')
+@section('content')
   <div class="container">
 
   </div>
 
-  @endsection
+@endsection
